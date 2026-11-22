@@ -5,7 +5,7 @@ export const education = [
 		school: 'Universitas Cenderawasih',
 		time: '2026 - Sekarang',
 		degree: 'S1 Statistika',
-		location: 'Jayapura,Indonesia',
+		location: 'Jayapura, Indonesia',
 		description: 'Menempuh pendidikan sarjana di bidang statistika',
 	},
 	{
