@@ -11,12 +11,53 @@ Website portofolio pribadi [Airin Nur Azizah](https://airinazizah19.github.io), 
 - RSS feed dan sitemap untuk mendukung distribusi serta indeksasi konten.
 - Build statis dan deployment ke GitHub Pages melalui GitHub Actions.
 
+## Struktur proyek
+
+```text
+.
+├── .github/workflows/astro.yml # Build dan deployment GitHub Pages
+├── src/
+│   ├── assets/                 # Foto profil dan aset gambar
+│   ├── components/             # Komponen antarmuka
+│   ├── content/BlogPosts/      # Konten blog dalam Markdown
+│   ├── data/                   # Data CV, karya, dan bidang minat
+│   ├── layouts/                # Kerangka halaman
+│   ├── lib/                    # Utilitas dan fungsi pencarian
+│   ├── pages/                  # Halaman dan endpoint situs
+│   ├── styles/                 # CSS global dan tema
+│   ├── types/                  # Definisi tipe TypeScript
+│   ├── content.config.ts       # Skema koleksi konten
+│   └── settings.ts             # Profil dan pengaturan situs
+├── astro.config.mjs            # Konfigurasi Astro
+├── package.json                # Dependensi dan perintah npm
+└── README.md                   # Dokumentasi proyek
+```
+
 ## Teknologi
 
 - [Astro](https://astro.build/) untuk membangun situs statis.
 - TypeScript dan React untuk komponen serta fungsionalitas antarmuka.
 - Tailwind CSS dan DaisyUI untuk styling dan tema.
 - npm untuk mengelola dependensi, serta GitHub Pages untuk hosting.
+
+## Mengelola konten
+
+- Ubah nama, profil, tautan sosial, dan pengaturan situs di `src/settings.ts`.
+- Perbarui data pendidikan, pengalaman, keterampilan, dan karya di `src/data/cv.ts`.
+- Tambahkan tulisan baru sebagai file Markdown di `src/content/BlogPosts/`. Setiap tulisan memerlukan `title`, `date`, dan `excerpt`; `tags` bersifat opsional.
+
+Contoh format tulisan blog:
+
+```markdown
+---
+title: "Judul tulisan"
+date: "2026-11-22"
+excerpt: "Ringkasan singkat tulisan."
+tags: ["belajar", "statistika"]
+---
+
+Isi tulisan ditulis menggunakan Markdown.
+```
 
 ## Menjalankan secara lokal
 
@@ -32,4 +73,14 @@ Buka alamat lokal yang ditampilkan di terminal (biasanya `http://localhost:4321`
 ```sh
 npm run build
 npm run preview
+```
+
+## Pemeriksaan
+
+Jalankan perintah berikut sebelum mengirim perubahan untuk menjalankan tes, memeriksa kualitas kode, dan memvalidasi Astro serta TypeScript:
+
+```sh
+npm test
+npm run lint
+npm run check
 ```
