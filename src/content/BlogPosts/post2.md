@@ -21,9 +21,9 @@ Secara sederhana, tugas utama seotang **Data Analyst** adalah mengumpulkan, memb
 
 Sebagai mahasiswa program studi S1 Statistika, saya menyadari bahwa materi dasar yang dipelajari di kelas merupakan fondasi utama dalam analisis data, seperti:
 
-1. **Statistika Deskriptif:** Membantu meringkas karateristik data melalui ukuran pemusatan (rata-rata, median) dan penyebaran data.
-2. **Uji Hipotesis dan Probabilitas:** Digunakan untuk memastikan apakah sebuah pola dalam data benar-benar signifikan atau hanya kebetulan semata.
-3. **Analisis regresi:** Membantu memprediksi tren atau melihat seberapa besar pengaruh suatu variabel terhadap variabel lainnya.
+- **Statistika Deskriptif:** Membantu meringkas karateristik data melalui ukuran pemusatan (rata-rata, median) dan penyebaran data.
+- **Uji Hipotesis dan Probabilitas:** Digunakan untuk memastikan apakah sebuah pola dalam data benar-benar signifikan atau hanya kebetulan semata.
+- **Analisis regresi:** Membantu memprediksi tren atau melihat seberapa besar pengaruh suatu variabel terhadap variabel lainnya.
 
 ## Langkah Selanjutnya
 
