@@ -22,7 +22,7 @@ export const social = {
 	linkedin: '',
 	x: '',
 	bluesky: '',
-	github: '',
+	github: 'https://github.com/airinazizah19',
 	gitlab: '',
 	scholar: '',
 	inspire: '',
