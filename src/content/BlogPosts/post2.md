@@ -27,4 +27,4 @@ Sebagai mahasiswa program studi S1 Statistika, saya menyadari bahwa materi dasar
 
 ## Langkah Selanjutnya
 
-Ke depannya, saya berencana untuk terus mengasah pemahaman teori statistika ini sambil mempraktikannya menggunakan berbagai alat analisis data seperti **Excel, R, Python, dan SQL**, lalu membagikan hasil explorasinya di website portfolio ini.
+>Ke depannya, saya berencana untuk terus mengasah pemahaman teori statistika ini sambil mempraktikannya menggunakan berbagai alat analisis data seperti Excel, R, Python, dan SQL, lalu membagikan hasil explorasinya di website portfolio ini.
