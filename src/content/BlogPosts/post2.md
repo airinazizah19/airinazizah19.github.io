@@ -1,7 +1,7 @@
 ---
 title: "Mengenal Peran Data Analyst dan Mengapa Statistika Sangat penting"
 date: "2026-11-20"
-tags: [" Statistika", "Data Analyst", "Belajar"]
+tags: ["Statistika", "Data-Analyst", "Belajar"]
 excerpt: "Mengulas hubungan erat antara ilmu statistika di bangku kuliah dengan keterampilan praktis seorang data analyst di dunia kerja."
 ---
 
@@ -21,9 +21,9 @@ Secara sederhana, tugas utama seotang **Data Analyst** adalah mengumpulkan, memb
 
 Sebagai mahasiswa program studi S1 Statistika, saya menyadari bahwa materi dasar yang dipelajari di kelas merupakan fondasi utama dalam analisis data, seperti:
 
-- **Statistika Deskriptif:** Membantu meringkas karateristik data melalui ukuran pemusatan (rata-rata, median) dan penyebaran data.
-- **Uji Hipotesis dan Probabilitas:** Digunakan untuk memastikan apakah sebuah pola dalam data benar-benar signifikan atau hanya kebetulan semata.
-- **Analisis regresi:** Membantu memprediksi tren atau melihat seberapa besar pengaruh suatu variabel terhadap variabel lainnya.
+1. **Statistika Deskriptif:** Membantu meringkas karateristik data melalui ukuran pemusatan (rata-rata, median) dan penyebaran data.
+2. **Uji Hipotesis dan Probabilitas:** Digunakan untuk memastikan apakah sebuah pola dalam data benar-benar signifikan atau hanya kebetulan semata.
+3. **Analisis regresi:** Membantu memprediksi tren atau melihat seberapa besar pengaruh suatu variabel terhadap variabel lainnya.
 
 ## Langkah Selanjutnya
 
