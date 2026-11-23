@@ -49,15 +49,15 @@ export const publications = [
 		abstract: 'Penelitian mengenai strategi pemasaran produk pertanian lokal di Distrik Wanggar, Nabire, Papua Tengah.',
 	},
 	{
-		title: 'Tugas Excel',
+		title: 'Budget Forecast Olahan Data',
 		authors: 'Airin Nur Azizah',
 		journal: 'Tugas bootcampt',
 		time: '2026',
 		link: 'https://docs.google.com/spreadsheets/d/1B7B04rTqM0DnwMfPdhUPmMALcKHTep1G/edit?usp=drive_link&ouid=107546606199285437414&rtpof=true&sd=true',
-		abstract: 'Tugas pelatihan microsoft excel',
+		abstract: 'Tugas pelatihan microsoft excel mengolah data',
 	},
 	{
-		title: 'Essai Beasiswa',
+		title: 'Essai Beasiswa Bank Syariah Indonesia ',
 		authors: 'Airin Nur Azizah',
 		journal: 'Tugas bootcampt',
 		time: '2026',
