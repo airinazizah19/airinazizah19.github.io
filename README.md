@@ -2,7 +2,7 @@
 
 Website portofolio pribadi [Airin Nur Azizah](https://airinazizah19.github.io), mahasiswa Statistika di Universitas Cenderawasih. Situs ini menampilkan profil, bidang minat, pendidikan, keterampilan, serta proyek dan karya dalam satu tempat.
 - Situs: https://github.io
-- Github Pages: https:airinazizah19.github.io
+- Github Pages: https://airinazizah19.github.io
 - Gudang: https://github.com/airinazizah19/airinazizah19.github.io
 - Nama tema: Astro Academia
 - Pembuat: Matteo Barbero
