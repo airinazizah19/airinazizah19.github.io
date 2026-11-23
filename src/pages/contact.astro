@@ -1,0 +1,115 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import { profile, social } from '@/settings'
+---
+
+<Layout
+	title='Kontak'
+	description={`Hubungi ${profile.fullName}`}
+>
+	<section class='max-w-2xl'>
+		<h1 class='text-3xl font-bold mb-4'>Hubungi Saya</h1>
+		<p class='mb-8 text-base-content/70'>
+			Tertarik untuk berdiskusi, menawarkan magang, atau berkolaborasi?
+			Silakan kirim pesan melalui formulir atau email.
+		</p>
+
+		<div class='grid gap-4 sm:grid-cols-2 mb-10'>
+			<a
+				href={`mailto:${social.email}`}
+				class='card bg-base-200 p-5 hover:bg-base-300 transition-colors'
+			>
+				<h2 class='font-bold mb-1'>Email</h2>
+				<span class='text-primary break-all'>{social.email}</span>
+			</a>
+
+			{social.linkedin && (
+				<a
+					href={social.linkedin}
+					target='_blank'
+					rel='noopener noreferrer'
+					class='card bg-base-200 p-5 hover:bg-base-300 transition-colors'
+				>
+					<h2 class='font-bold mb-1'>LinkedIn</h2>
+					<span class='text-primary'>Lihat profil LinkedIn</span>
+				</a>
+			)}
+		</div>
+
+		<form
+			id='contact-form'
+			data-recipient={social.email}
+			class='card bg-base-200 p-6 space-y-4'
+		>
+			<div>
+				<label for='contact-name' class='label'>
+					<span class='label-text font-medium'>Nama</span>
+				</label>
+				<input
+					id='contact-name'
+					name='name'
+					type='text'
+					required
+					class='input input-bordered w-full'
+					placeholder='Nama Anda'
+				/>
+			</div>
+
+			<div>
+				<label for='contact-email' class='label'>
+					<span class='label-text font-medium'>Email Anda</span>
+				</label>
+				<input
+					id='contact-email'
+					name='email'
+					type='email'
+					required
+					class='input input-bordered w-full'
+					placeholder='nama@email.com'
+				/>
+			</div>
+
+			<div>
+				<label for='contact-message' class='label'>
+					<span class='label-text font-medium'>Pesan</span>
+				</label>
+				<textarea
+					id='contact-message'
+					name='message'
+					required
+					rows='6'
+					class='textarea textarea-bordered w-full'
+					placeholder='Tulis pesan Anda...'
+				></textarea>
+			</div>
+
+			<button type='submit' class='btn btn-primary'>
+				Kirim lewat Email
+			</button>
+			<p class='text-sm text-base-content/60'>
+				Tombol ini akan membuka aplikasi email Anda. Pesan belum dikirim sampai Anda menekan kirim di aplikasi email.
+			</p>
+		</form>
+	</section>
+</Layout>
+
+<script>
+	const form = document.querySelector<HTMLFormElement>('#contact-form')
+	const recipient = form?.dataset.recipient ?? ''
+
+	form?.addEventListener('submit', (event) => {
+		event.preventDefault()
+
+		const data = new FormData(form)
+		const name = String(data.get('name') ?? '').trim()
+		const email = String(data.get('email') ?? '').trim()
+		const message = String(data.get('message') ?? '').trim()
+
+		const subject = encodeURIComponent(`Pesan dari ${name}`)
+		const body = encodeURIComponent(
+			`Nama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`,
+		)
+
+		window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`
+	})
+</script>
